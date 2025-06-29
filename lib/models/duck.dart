@@ -1,4 +1,9 @@
 class Duck {
+
+  void fly() {
+    print("Fly!");
+  }
+
   void quack() {
     print("Quack!");
   }
