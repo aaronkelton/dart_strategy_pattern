@@ -3,7 +3,6 @@ import 'package:test/expect.dart';
 import 'package:test/scaffolding.dart';
 
 void main() {
-  // This turns out to be a problem. While we can reuse inherited methods, now we need to override the child class.
   test('RubberDuck#fly', () {
     final duck = RubberDuck();
     expect(duck.fly, prints('I can\'t fly!\n'));
