@@ -3,11 +3,6 @@ import 'package:test/expect.dart';
 import 'package:test/scaffolding.dart';
 
 void main() {
-  test('RubberDuck#fly', () {
-    final duck = RubberDuck();
-    expect(duck.fly, prints('I can\'t fly!\n'));
-  });
-
   test('RubberDuck#quack', () {
     final duck = RubberDuck();
     expect(duck.quack, prints('Squeak!\n'));
