@@ -1,4 +1,4 @@
-class Duck {
+abstract class Duck {
 
   void fly() {
     print("Fly!");
