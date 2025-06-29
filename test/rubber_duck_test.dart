@@ -6,12 +6,12 @@ void main() {
   // This turns out to be a problem. While we can reuse inherited methods, now we need to override the child class.
   test('RubberDuck#fly', () {
     final duck = RubberDuck();
-    expect(duck.fly, prints('Fly!\n'));
+    expect(duck.fly, prints('I can\'t fly!\n'));
   });
 
   test('RubberDuck#quack', () {
     final duck = RubberDuck();
-    expect(duck.quack, prints('Quack!\n'));
+    expect(duck.quack, prints('Squeak!\n'));
   });
 
   test('RubberDuck#swim', () {
