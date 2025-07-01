@@ -3,23 +3,21 @@ import 'package:test/expect.dart';
 import 'package:test/scaffolding.dart';
 
 void main() {
-  test('RedheadDuck#fly', () {
-    final duck = RedheadDuck();
-    expect(duck.fly, prints('Fly!\n'));
+  final duck = RedheadDuck();
+
+  test('RedheadDuck#performFly', () {
+    expect(() => duck.performFly(), prints('I\'m flying!!\n'));
   });
 
-  test('RedheadDuck#quack', () {
-    final duck = RedheadDuck();
-    expect(duck.quack, prints('Quack!\n'));
+  test('RedheadDuck#performQuack', () {
+    expect(() => duck.performQuack(), prints('Quack\n'));
   });
 
   test('RedheadDuck#swim', () {
-    final duck = RedheadDuck();
-    expect(duck.swim, prints('Swim!\n'));
+    expect(() => duck.swim(), prints('All ducks float, even decoys!\n'));
   });
 
   test('RedheadDuck#display', () {
-    final duck = RedheadDuck();
     expect(duck.display, prints('Looks like a redhead\n'));
   });
 }

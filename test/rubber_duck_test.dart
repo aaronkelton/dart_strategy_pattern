@@ -3,18 +3,17 @@ import 'package:test/expect.dart';
 import 'package:test/scaffolding.dart';
 
 void main() {
-  test('RubberDuck#quack', () {
-    final duck = RubberDuck();
-    expect(duck.quack, prints('Squeak!\n'));
+  final duck = RubberDuck();
+
+  test('RubberDuck#performQuack', () {
+    expect(() => duck.performQuack(), prints('Squeak\n'));
   });
 
   test('RubberDuck#swim', () {
-    final duck = RubberDuck();
-    expect(duck.swim, prints('Swim!\n'));
+    expect(() => duck.swim(), prints('All ducks float, even decoys!\n'));
   });
 
   test('RubberDuck#display', () {
-    final duck = RubberDuck();
     expect(duck.display, prints('Looks like a rubber duck\n'));
   });
 }

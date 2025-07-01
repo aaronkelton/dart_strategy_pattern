@@ -1,10 +1,11 @@
-import 'package:strategy_pattern/interfaces/quackable.dart';
+import 'package:strategy_pattern/models/behaviors/fly/fly_no_way.dart';
+import 'package:strategy_pattern/models/behaviors/quack/squeak.dart';
 import 'package:strategy_pattern/models/duck.dart';
 
-class RubberDuck extends Duck implements Quackable {
-  @override
-  void quack() {
-    print("Squeak!");
+class RubberDuck extends Duck {
+  RubberDuck() {
+    flyBehavior = FlyNoWay();
+    quackBehavior = Squeak();
   }
 
   @override

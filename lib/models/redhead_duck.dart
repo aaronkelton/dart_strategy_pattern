@@ -1,16 +1,11 @@
-import 'package:strategy_pattern/interfaces/flyable.dart';
-import 'package:strategy_pattern/interfaces/quackable.dart';
+import 'package:strategy_pattern/models/behaviors/fly/fly_with_wings.dart';
+import 'package:strategy_pattern/models/behaviors/quack/quack.dart';
 import 'package:strategy_pattern/models/duck.dart';
 
-class RedheadDuck extends Duck implements Flyable, Quackable {
-  @override
-  void fly() {
-    print("Fly!");
-  }
-
-  @override
-  void quack() {
-    print("Quack!");
+class RedheadDuck extends Duck {
+  RedheadDuck() {
+    flyBehavior = FlyWithWings();
+    quackBehavior = Quack();
   }
 
   @override

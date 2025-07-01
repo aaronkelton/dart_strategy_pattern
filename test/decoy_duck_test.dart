@@ -5,7 +5,7 @@ import 'package:test/scaffolding.dart';
 void main() {
   test('DecoyDuck#swim', () {
     final duck = DecoyDuck();
-    expect(duck.swim, prints('Swim!\n'));
+    expect(() => duck.swim(), prints('All ducks float, even decoys!\n'));
   });
 
   test('DecoyDuck#display', () {
