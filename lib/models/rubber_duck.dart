@@ -1,5 +1,5 @@
-import 'package:strategy_pattern/models/behaviors/fly/fly_no_way.dart';
-import 'package:strategy_pattern/models/behaviors/quack/squeak.dart';
+import 'package:strategy_pattern/models/strategies/fly/fly_no_way.dart';
+import 'package:strategy_pattern/models/strategies/quack/squeak.dart';
 import 'package:strategy_pattern/models/duck.dart';
 
 class RubberDuck extends Duck {

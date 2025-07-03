@@ -1,4 +1,4 @@
-import 'package:strategy_pattern/models/behaviors/fly/fly_rocket_powered.dart';
+import 'package:strategy_pattern/models/strategies/fly/fly_rocket_powered.dart';
 import 'package:strategy_pattern/models/model_duck.dart';
 import 'package:test/expect.dart';
 import 'package:test/scaffolding.dart';
